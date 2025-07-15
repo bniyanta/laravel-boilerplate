@@ -1,0 +1,10 @@
+{
+  "server": {
+    "encode": ["zstd", "br", "gzip"],
+    "php_server": true
+  },
+  "worker": {
+    "enabled": true,
+    "restart_on_change": true
+  }
+}

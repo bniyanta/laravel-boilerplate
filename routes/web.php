@@ -27,4 +27,9 @@ Route::middleware(['web'])->group(function () {
         ->name('social.callback');
 });
 
+Route::get('/phpinfo', function () {
+    \Laravel\Telescope\Telescope::stopRecording();
+    phpinfo();
+});
+
 require __DIR__ . '/auth.php';
